@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Church-Me | Find a church now</title>
+
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="js/custom.js"></script>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Mukta+Malar" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet" type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/agency.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="fixed-top navbar navbar-expand-lg">
+        <!-- Logo -->
+        <a class="navbar-brand" id="logo" href="#page-top">Church-<span class="red">Me</span>.com</a>
+        <!-- Nav links-->
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Church Finder</a></li>
+            <li class="nav-item pr-0"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <!-- Search bar -->
+        <form class="form-inline pull-right" id="sm-search" action="">
+            <input class="form-control mr-sm-2" type="text" placeholder="Enter zip code...">
+            <button class="btn btn-light" type="submit" onclick="location.href = '/church-finder';">Submit</button>
+        </form>
+        
+    </nav>
+
+    <!-- Header -->
+    <header class="homehead">
+        <div class="search-head container-fluid mx-auto">
+            <h1 class="intro2"><span class="gold">You're in Nashville.</span></h1>
+            <h1 class="intro text-center">Let us help you find a <span class="gold">church.</span></h1>
+            <h3 class="directions">Enter your zip code here:</h3>
+            <form class="mx-auto text-center" action="">
+                <div class="pb-3"><input class="form-control main-search" type="text" placeholder="eg. 37067"></div>
+                <button class="main-btn btn btn-lg btn-warning text-uppercase" type="submit" onclick="location.href = '/church-finder';">Submit Zip Code</button>
+            </form>
+        </div>
+    </header>
+    
+    <!--Featured Churches-->
+    <div class="container-fluid pt-4">
+      <h3 class="featurehead mx-auto text-center">FEATURED CHURCHES</h3>
+    </div>
+    <!--Carousel-->
+    <div id="churches" class="carousel slide" data-ride="carousel" data-interval="3000">
+        <ul class="carousel-indicators">
+            <li data-target="#churches" data-slide-to="0" class="active"></li>
+            <li data-target="#churches" data-slide-to="1"></li>
+            <li data-target="#churches" data-slide-to="2"></li>
+            <li data-target="#churches" data-slide-to="3"></li>
+            <li data-target="#churches" data-slide-to="4"></li>
+            <li data-target="#churches" data-slide-to="5"></li>
+        </ul>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <a href="http://brentwoodhills.org/" target="_blank">
+            <img src="img/churches/brentwood_hills_church_of_christ.jpg" alt="brentwood">
+            <div class="carousel-caption">
+              <h3>Brentwood Hills Church of Christ</h3>
+              <p>Nashville, TN</p>
+            </div>   
+          </div>
+          <div class="carousel-item">
+            <a href="https://nashvillefirst.org/" target="_blank">
+            <img src="img/churches/nashville_first_baptist.jpg" alt="nashville">
+            <div class="carousel-caption">
+              <h3>Nashville First Baptist Church</h3>
+              <p>Nashville, TN</p>
+            </div>   
+          </div>
+          <div class="carousel-item">
+            <a href="http://grasslandheights.org/" target="_blank">
+            <img src="img/churches/grassland_heights_baptist.jpg" alt="grassland">
+            <div class="carousel-caption">
+              <h3>Grassland Heights Baptist Church</h3>
+              <p>Franklin, TN</p>
+            </div>   
+          </div>
+          <div class="carousel-item">
+            <a href="http://www.blakemoreumc.org/" target="_blank">
+            <img src="img/churches/Blakemore.jpg" alt="blakemore">
+            <div class="carousel-caption">
+                <h3>Blakemore United Methodist Church</h3>
+                <p>Nashville, TN</p>
+            </div>   
+           </div>
+            <div class="carousel-item">
+                <a href="https://www.calvaryumc.com/" target="_blank">
+                <img src="img/churches/calvary.jpg" alt="calvary">
+                <div class="carousel-caption">
+                    <h3>Calvary United Methodist Church</h3>
+                    <p>Nashville, TN</p>
+                </div>   
+            </div>
+            <div class="carousel-item">
+                <a href="https://www.covenantpres.com/" target="_blank">
+                <img src="img/churches/covenant.jpg" alt="covenant">
+                <div class="carousel-caption">
+                    <h3>Covenant Presbyterian Church</h3>
+                    <p>Nashville, TN</p>
+                </div>
+                </a>   
+            </div>
+        </div>
+      </div>
+
+      <!--About Section
+      <div class=" container pt-4 mx-auto text-center">
+        <p class="about">Welcome to Church-Me.com! Whether you are new to Nashville or have been a resident of this city for years,
+          this tool will help to find the best church for you!
+        </p>
+      </div> -->
+
+          <!-- Footer -->
+    <footer>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-4">
+            <span class="copyright" id="copyright">Copyright &copy; Church-Me.com 2019</span>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-inline quicklinks">
+              <li class="list-inline-item">
+                <a href="#">Privacy Policy</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">Terms of Use</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="/login">Admin</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Contact form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/agency.min.js"></script>
+    
+
+    </body>
+</html>

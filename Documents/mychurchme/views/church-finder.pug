@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Church-Me | Church Finder</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Mukta+Malar" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/agency.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg dark-background not-main-menu" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="/">Church-<p class="ME_RED">Me</p>.com</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/church-finder">Church Finder</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/#contact">Contact</a>
+            </li>
+            if (logged_in)
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"> Admin </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item dark-text" href="/add_church">Add Church</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item dark-text" href="/edit_churches">Edit Churches</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item dark-text" href="/featured">Feature Churches</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item dark-text" href="/logout">Logout</a>
+                </div>
+              </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+
+    <!-- google implementation and sidebar -->
+    <section id="maps-section">
+      <div class="row maps_page">
+        <div class="left_search_bar col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <div class="map-search-header">
+            <p>Search churches near Nashville</p>
+          </div>
+
+          
+          
+          for church in churches
+            div(class="church-entry" onmouseenter="mouseEnter(this)" onmouseleave="leaving(this)" id=church.church_id gps_long=church.gps_long gps_lat=church.gps_lat title=church.church_name onclick="window.location='" + church.church_link + "';")
+              div(class="data")
+                p(class="church-entry-title" id="church-name")=church.church_name
+                p(class="church-entry-address")=church.church_address + " " + church.church_city + ", " + church.church_state + " " + church.church_zip
+              
+              div(class="image")
+                img(class="church-entry-image" src=church.image_path alt="Image Not Found")
+
+
+        </div>
+
+        <div class="map col-lg-8 col-md-8 col-sm-12 col-xs-12" id="google-map">
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Contact form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/agency.min.js"></script>
+    <script src="js/google-map.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCEgmWQo78hSeuGH-__cvT1yhl5fH-SrnM&callback=myMap" type="text/javascript"></script>
+
+  </body>
+
+</html>
