@@ -10,3 +10,6 @@ This final exam was done individually and I was given 4 days to complete it. It 
 
 ***These files can be viewed easily; however, in order for the correct changes to be made, Anaconda with Jupyter Lab and Jupyter Notebook must be installed.***
 - Anaconda: https://www.anaconda.com/
+
+Final Report Grade: **100%**
+Final Exam Grade: **101%**
