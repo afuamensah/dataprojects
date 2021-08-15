@@ -12,4 +12,5 @@ This final exam was done individually and I was given 4 days to complete it. It 
 - Anaconda: https://www.anaconda.com/
 
 Final Report Grade: **100%**
-Final Exam Grade: **101%**
+
+Final Exam Grade: **100%**
